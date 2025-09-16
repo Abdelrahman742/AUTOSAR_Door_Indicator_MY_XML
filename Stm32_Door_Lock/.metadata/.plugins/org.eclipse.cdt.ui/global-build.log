@@ -1,0 +1,548 @@
+20:07:56 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o:C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes/lcd.h:45: multiple definition of `PinCfg'; ./HAL/lcd.o:C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes/lcd.h:45: first defined here
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Door_Lock.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+20:12:00 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc  -gdwarf-2 "../HAL/I2C_Slave_EEPROM.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"HAL/I2C_Slave_EEPROM.d" -MT"HAL/I2C_Slave_EEPROM.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/I2C_Slave_EEPROM.o"
+arm-none-eabi-gcc  -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+Finished building target: Door_Lock.elf
+ 
+arm-none-eabi-size  Door_Lock.elf 
+arm-none-eabi-objdump -h -S Door_Lock.elf  > "Door_Lock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2728	      8	   1712	   4448	   1160	Door_Lock.elf
+Finished building: default.size.stdout
+ 
+Finished building: Door_Lock.list
+ 
+20:12:13 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-size  Door_Lock.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2728	      8	   1712	   4448	   1160	Door_Lock.elf
+Finished building: default.size.stdout
+ 
+21:03:31 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+Finished building target: Door_Lock.elf
+ 
+arm-none-eabi-size  Door_Lock.elf 
+arm-none-eabi-objdump -h -S Door_Lock.elf  > "Door_Lock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2728	      8	   1712	   4448	   1160	Door_Lock.elf
+Finished building: default.size.stdout
+Finished building: Door_Lock.list
+ 
+ 
+04:10:52 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/GPIO/stm32f103x8_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/GPIO/stm32f103x8_gpio_driver.d" -MT"Stm32_F103C6_Drivers/GPIO/stm32f103x8_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/GPIO/stm32f103x8_gpio_driver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_EXTI_driver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_EXTI_driver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.o"
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:42: warning: initialization of 'long unsigned int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   20 | I2C_InitTypeDef Global_I2C_Config[2]  = {NULL,NULL} ;
+      |                                          ^~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:42: note: (near initialization for 'Global_I2C_Config[0].I2C_ClockSpeed')
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:47: warning: initialization of 'long unsigned int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   20 | I2C_InitTypeDef Global_I2C_Config[2]  = {NULL,NULL} ;
+      |                                               ^~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:47: note: (near initialization for 'Global_I2C_Config[0].StretchMode')
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:41: warning: missing braces around initializer [-Wmissing-braces]
+   20 | I2C_InitTypeDef Global_I2C_Config[2]  = {NULL,NULL} ;
+      |                                         ^
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c: In function 'I2C_GetFlagStatus':
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:400:27: warning: unused variable 'dummyRead' [-Wunused-variable]
+  400 |         volatile uint32_t dummyRead ;
+      |                           ^~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c: In function 'I2C1_EV_IRQHandler':
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:544:25: warning: implicit declaration of function 'Slave_States' [-Wimplicit-function-declaration]
+  544 |                         Slave_States(I2Cx,I2C_EV_STOP);
+      |                         ^~~~~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:527:27: warning: variable 'dummy_read' set but not used [-Wunused-but-set-variable]
+  527 |         volatile uint32_t dummy_read = 0 ;
+      |                           ^~~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c: At top level:
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:612:6: warning: conflicting types for 'Slave_States'; have 'void(I2C_TypeDef *, Slave_State)'
+  612 | void Slave_States (I2C_TypeDef* I2Cx  ,Slave_State state)
+      |      ^~~~~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:544:25: note: previous implicit declaration of 'Slave_States' with type 'void(I2C_TypeDef *, Slave_State)'
+  544 |                         Slave_States(I2Cx,I2C_EV_STOP);
+      |                         ^~~~~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.c: In function 'MCAL_RCC_GetSYS_CLCKFreq':
+../Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.c:87:1: warning: control reaches end of non-void function [-Wreturn-type]
+   87 | }
+      | ^
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_USART_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_USART_driver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_USART_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_USART_driver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+../Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.c: In function 'MCAL_SPI_GPIO_Set_Pins':
+../Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.c:274:25: warning: case label value is less than minimum value for type [-Wswitch-outside-range]
+  274 |                         case SPI_NSS_Hard_Master_SS_output_disable:
+      |                         ^~~~
+../Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.c:376:25: warning: case label value is less than minimum value for type [-Wswitch-outside-range]
+  376 |                         case SPI_NSS_Hard_Master_SS_output_disable:
+      |                         ^~~~
+../Stm32_F103C6_Drivers/stm32f103x8_USART_driver.c: In function 'MCAL_UART_SendData':
+../Stm32_F103C6_Drivers/stm32f103x8_USART_driver.c:180:19: warning: unused variable 'pdata' [-Wunused-variable]
+  180 |         uint16_t *pdata;
+      |                   ^~~~~
+arm-none-eabi-gcc  -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc  -gdwarf-2 "../HAL/I2C_Slave_EEPROM.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"HAL/I2C_Slave_EEPROM.d" -MT"HAL/I2C_Slave_EEPROM.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/I2C_Slave_EEPROM.o"
+arm-none-eabi-gcc  -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+Finished building target: Door_Lock.elf
+ 
+arm-none-eabi-size  Door_Lock.elf 
+arm-none-eabi-objdump -h -S Door_Lock.elf  > "Door_Lock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2728	      8	   1712	   4448	   1160	Door_Lock.elf
+Finished building: default.size.stdout
+ 
+Finished building: Door_Lock.list
+ 
+04:13:07 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'StartOS':
+../Src/main.c:83:25: warning: implicit declaration of function 'ReadDoorSensor_Runnable' [-Wimplicit-function-declaration]
+   83 |                         ReadDoorSensor_Runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:88:25: warning: implicit declaration of function 'DoorLock_indication_runnable' [-Wimplicit-function-declaration]
+   88 |                         DoorLock_indication_runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `StartOS':
+C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:83: undefined reference to `ReadDoorSensor_Runnable'
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:88: undefined reference to `DoorLock_indication_runnable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Door_Lock.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+04:14:58 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'StartOS':
+../Src/main.c:83:25: warning: implicit declaration of function 'ReadDoorSensor_Runnable' [-Wimplicit-function-declaration]
+   83 |                         ReadDoorSensor_Runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:88:25: warning: implicit declaration of function 'DoorLock_indication_runnable' [-Wimplicit-function-declaration]
+   88 |                         DoorLock_indication_runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `StartOS':
+C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:83: undefined reference to `ReadDoorSensor_Runnable'
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:88: undefined reference to `DoorLock_indication_runnable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Door_Lock.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+04:15:14 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `StartOS':
+C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:83: undefined reference to `ReadDoorSensor_Runnable'
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:88: undefined reference to `DoorLock_indication_runnable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Door_Lock.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+04:19:17 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'StartOS':
+../Src/main.c:83:25: warning: implicit declaration of function 'ReadDoorSensor_Runnable' [-Wimplicit-function-declaration]
+   83 |                         ReadDoorSensor_Runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:88:25: warning: implicit declaration of function 'DoorLock_indication_runnable' [-Wimplicit-function-declaration]
+   88 |                         DoorLock_indication_runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `StartOS':
+C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:83: undefined reference to `ReadDoorSensor_Runnable'
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:88: undefined reference to `DoorLock_indication_runnable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Door_Lock.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+04:21:12 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `StartOS':
+C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:83: undefined reference to `ReadDoorSensor_Runnable'
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:88: undefined reference to `DoorLock_indication_runnable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Door_Lock.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+04:22:30 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/GPIO/stm32f103x8_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/GPIO/stm32f103x8_gpio_driver.d" -MT"Stm32_F103C6_Drivers/GPIO/stm32f103x8_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/GPIO/stm32f103x8_gpio_driver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_EXTI_driver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_EXTI_driver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.o"
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:42: warning: initialization of 'long unsigned int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   20 | I2C_InitTypeDef Global_I2C_Config[2]  = {NULL,NULL} ;
+      |                                          ^~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:42: note: (near initialization for 'Global_I2C_Config[0].I2C_ClockSpeed')
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:47: warning: initialization of 'long unsigned int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   20 | I2C_InitTypeDef Global_I2C_Config[2]  = {NULL,NULL} ;
+      |                                               ^~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:47: note: (near initialization for 'Global_I2C_Config[0].StretchMode')
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:41: warning: missing braces around initializer [-Wmissing-braces]
+   20 | I2C_InitTypeDef Global_I2C_Config[2]  = {NULL,NULL} ;
+      |                                         ^
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c: In function 'I2C_GetFlagStatus':
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:400:27: warning: unused variable 'dummyRead' [-Wunused-variable]
+  400 |         volatile uint32_t dummyRead ;
+      |                           ^~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c: In function 'I2C1_EV_IRQHandler':
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:544:25: warning: implicit declaration of function 'Slave_States' [-Wimplicit-function-declaration]
+  544 |                         Slave_States(I2Cx,I2C_EV_STOP);
+      |                         ^~~~~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:527:27: warning: variable 'dummy_read' set but not used [-Wunused-but-set-variable]
+  527 |         volatile uint32_t dummy_read = 0 ;
+      |                           ^~~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c: At top level:
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:612:6: warning: conflicting types for 'Slave_States'; have 'void(I2C_TypeDef *, Slave_State)'
+  612 | void Slave_States (I2C_TypeDef* I2Cx  ,Slave_State state)
+      |      ^~~~~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:544:25: note: previous implicit declaration of 'Slave_States' with type 'void(I2C_TypeDef *, Slave_State)'
+  544 |                         Slave_States(I2Cx,I2C_EV_STOP);
+      |                         ^~~~~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.c: In function 'MCAL_RCC_GetSYS_CLCKFreq':
+../Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.c:87:1: warning: control reaches end of non-void function [-Wreturn-type]
+   87 | }
+      | ^
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_USART_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_USART_driver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_USART_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_USART_driver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+../Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.c: In function 'MCAL_SPI_GPIO_Set_Pins':
+../Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.c:274:25: warning: case label value is less than minimum value for type [-Wswitch-outside-range]
+  274 |                         case SPI_NSS_Hard_Master_SS_output_disable:
+      |                         ^~~~
+../Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.c:376:25: warning: case label value is less than minimum value for type [-Wswitch-outside-range]
+  376 |                         case SPI_NSS_Hard_Master_SS_output_disable:
+      |                         ^~~~
+../Stm32_F103C6_Drivers/stm32f103x8_USART_driver.c: In function 'MCAL_UART_SendData':
+../Stm32_F103C6_Drivers/stm32f103x8_USART_driver.c:180:19: warning: unused variable 'pdata' [-Wunused-variable]
+  180 |         uint16_t *pdata;
+      |                   ^~~~~
+../Src/main.c: In function 'StartOS':
+../Src/main.c:83:25: warning: implicit declaration of function 'ReadDoorSensor_Runnable' [-Wimplicit-function-declaration]
+   83 |                         ReadDoorSensor_Runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:88:25: warning: implicit declaration of function 'DoorLock_indication_runnable' [-Wimplicit-function-declaration]
+   88 |                         DoorLock_indication_runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc  -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc  -gdwarf-2 "../HAL/I2C_Slave_EEPROM.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"HAL/I2C_Slave_EEPROM.d" -MT"HAL/I2C_Slave_EEPROM.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/I2C_Slave_EEPROM.o"
+arm-none-eabi-gcc  -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `StartOS':
+C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:83: undefined reference to `ReadDoorSensor_Runnable'
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:88: undefined reference to `DoorLock_indication_runnable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Door_Lock.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+04:25:13 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'StartOS':
+../Src/main.c:88:25: warning: implicit declaration of function 'DoorLock_indication_runnable' [-Wimplicit-function-declaration]
+   88 |                         DoorLock_indication_runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `StartOS':
+C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:88: undefined reference to `DoorLock_indication_runnable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Door_Lock.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+04:25:30 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+Finished building target: Door_Lock.elf
+ 
+arm-none-eabi-size  Door_Lock.elf 
+arm-none-eabi-objdump -h -S Door_Lock.elf  > "Door_Lock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2728	      8	   1712	   4448	   1160	Door_Lock.elf
+Finished building: default.size.stdout
+ 
+Finished building: Door_Lock.list
+ 
+04:27:02 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/GPIO/stm32f103x8_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/GPIO/stm32f103x8_gpio_driver.d" -MT"Stm32_F103C6_Drivers/GPIO/stm32f103x8_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/GPIO/stm32f103x8_gpio_driver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_EXTI_driver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_EXTI_driver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.o"
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:42: warning: initialization of 'long unsigned int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   20 | I2C_InitTypeDef Global_I2C_Config[2]  = {NULL,NULL} ;
+      |                                          ^~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:42: note: (near initialization for 'Global_I2C_Config[0].I2C_ClockSpeed')
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:47: warning: initialization of 'long unsigned int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   20 | I2C_InitTypeDef Global_I2C_Config[2]  = {NULL,NULL} ;
+      |                                               ^~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:47: note: (near initialization for 'Global_I2C_Config[0].StretchMode')
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:41: warning: missing braces around initializer [-Wmissing-braces]
+   20 | I2C_InitTypeDef Global_I2C_Config[2]  = {NULL,NULL} ;
+      |                                         ^
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c: In function 'I2C_GetFlagStatus':
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:400:27: warning: unused variable 'dummyRead' [-Wunused-variable]
+  400 |         volatile uint32_t dummyRead ;
+      |                           ^~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c: In function 'I2C1_EV_IRQHandler':
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:544:25: warning: implicit declaration of function 'Slave_States' [-Wimplicit-function-declaration]
+  544 |                         Slave_States(I2Cx,I2C_EV_STOP);
+      |                         ^~~~~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:527:27: warning: variable 'dummy_read' set but not used [-Wunused-but-set-variable]
+  527 |         volatile uint32_t dummy_read = 0 ;
+      |                           ^~~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c: At top level:
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:612:6: warning: conflicting types for 'Slave_States'; have 'void(I2C_TypeDef *, Slave_State)'
+  612 | void Slave_States (I2C_TypeDef* I2Cx  ,Slave_State state)
+      |      ^~~~~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:544:25: note: previous implicit declaration of 'Slave_States' with type 'void(I2C_TypeDef *, Slave_State)'
+  544 |                         Slave_States(I2Cx,I2C_EV_STOP);
+      |                         ^~~~~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.c: In function 'MCAL_RCC_GetSYS_CLCKFreq':
+../Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.c:87:1: warning: control reaches end of non-void function [-Wreturn-type]
+   87 | }
+      | ^
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_USART_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_USART_driver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_USART_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_USART_driver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+../Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.c: In function 'MCAL_SPI_GPIO_Set_Pins':
+../Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.c:274:25: warning: case label value is less than minimum value for type [-Wswitch-outside-range]
+  274 |                         case SPI_NSS_Hard_Master_SS_output_disable:
+      |                         ^~~~
+../Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.c:376:25: warning: case label value is less than minimum value for type [-Wswitch-outside-range]
+  376 |                         case SPI_NSS_Hard_Master_SS_output_disable:
+      |                         ^~~~
+../Stm32_F103C6_Drivers/stm32f103x8_USART_driver.c: In function 'MCAL_UART_SendData':
+../Stm32_F103C6_Drivers/stm32f103x8_USART_driver.c:180:19: warning: unused variable 'pdata' [-Wunused-variable]
+  180 |         uint16_t *pdata;
+      |                   ^~~~~
+arm-none-eabi-gcc  -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc  -gdwarf-2 "../HAL/I2C_Slave_EEPROM.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"HAL/I2C_Slave_EEPROM.d" -MT"HAL/I2C_Slave_EEPROM.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/I2C_Slave_EEPROM.o"
+arm-none-eabi-gcc  -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Door_Lock.elf
+ 
+arm-none-eabi-size  Door_Lock.elf 
+arm-none-eabi-objdump -h -S Door_Lock.elf  > "Door_Lock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2728	      8	   1712	   4448	   1160	Door_Lock.elf
+Finished building: default.size.stdout
+Finished building: Door_Lock.list
+ 
+ 
+04:27:20 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'StartOS':
+../Src/main.c:83:21: warning: implicit declaration of function 'ReadDoorSensor_Runnable' [-Wimplicit-function-declaration]
+   83 |                     ReadDoorSensor_Runnable();
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:88:25: warning: implicit declaration of function 'DoorLock_indication_runnable' [-Wimplicit-function-declaration]
+   88 |                         DoorLock_indication_runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `StartOS':
+C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:83: undefined reference to `ReadDoorSensor_Runnable'
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:88: undefined reference to `DoorLock_indication_runnable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Door_Lock.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+04:28:51 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'StartOS':
+../Src/main.c:83:25: warning: implicit declaration of function 'ReadDoorSensor_Runnable' [-Wimplicit-function-declaration]
+   83 |                         ReadDoorSensor_Runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:88:25: warning: implicit declaration of function 'DoorLock_indication_runnable' [-Wimplicit-function-declaration]
+   88 |                         DoorLock_indication_runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `StartOS':
+C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:83: undefined reference to `ReadDoorSensor_Runnable'
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:88: undefined reference to `DoorLock_indication_runnable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Door_Lock.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+04:29:06 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'StartOS':
+../Src/main.c:83:25: warning: implicit declaration of function 'ReadDoorSensor_Runnable' [-Wimplicit-function-declaration]
+   83 |                         ReadDoorSensor_Runnable(void);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:83:49: error: expected expression before 'void'
+   83 |                         ReadDoorSensor_Runnable(void);
+      |                                                 ^~~~
+../Src/main.c:88:25: warning: implicit declaration of function 'DoorLock_indication_runnable' [-Wimplicit-function-declaration]
+   88 |                         DoorLock_indication_runnable(void);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:88:54: error: expected expression before 'void'
+   88 |                         DoorLock_indication_runnable(void);
+      |                                                      ^~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+04:29:42 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/RTE_GEN" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'StartOS':
+../Src/main.c:83:25: warning: implicit declaration of function 'ReadDoorSensor_Runnable' [-Wimplicit-function-declaration]
+   83 |                         ReadDoorSensor_Runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:88:25: warning: implicit declaration of function 'DoorLock_indication_runnable' [-Wimplicit-function-declaration]
+   88 |                         DoorLock_indication_runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `StartOS':
+C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:83: undefined reference to `ReadDoorSensor_Runnable'
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:88: undefined reference to `DoorLock_indication_runnable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Door_Lock.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+04:34:41 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/GPIO/stm32f103x8_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/GPIO/stm32f103x8_gpio_driver.d" -MT"Stm32_F103C6_Drivers/GPIO/stm32f103x8_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/GPIO/stm32f103x8_gpio_driver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_EXTI_driver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_EXTI_driver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.o"
+../Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.c: In function 'MCAL_RCC_GetSYS_CLCKFreq':
+../Stm32_F103C6_Drivers/stm32f103x8_RCC_driver.c:87:1: warning: control reaches end of non-void function [-Wreturn-type]
+   87 | }
+      | ^
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:42: warning: initialization of 'long unsigned int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   20 | I2C_InitTypeDef Global_I2C_Config[2]  = {NULL,NULL} ;
+      |                                          ^~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:42: note: (near initialization for 'Global_I2C_Config[0].I2C_ClockSpeed')
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:47: warning: initialization of 'long unsigned int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   20 | I2C_InitTypeDef Global_I2C_Config[2]  = {NULL,NULL} ;
+      |                                               ^~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:47: note: (near initialization for 'Global_I2C_Config[0].StretchMode')
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:20:41: warning: missing braces around initializer [-Wmissing-braces]
+   20 | I2C_InitTypeDef Global_I2C_Config[2]  = {NULL,NULL} ;
+      |                                         ^
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c: In function 'I2C_GetFlagStatus':
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:400:27: warning: unused variable 'dummyRead' [-Wunused-variable]
+  400 |         volatile uint32_t dummyRead ;
+      |                           ^~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c: In function 'I2C1_EV_IRQHandler':
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:544:25: warning: implicit declaration of function 'Slave_States' [-Wimplicit-function-declaration]
+  544 |                         Slave_States(I2Cx,I2C_EV_STOP);
+      |                         ^~~~~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:527:27: warning: variable 'dummy_read' set but not used [-Wunused-but-set-variable]
+  527 |         volatile uint32_t dummy_read = 0 ;
+      |                           ^~~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c: At top level:
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:612:6: warning: conflicting types for 'Slave_States'; have 'void(I2C_TypeDef *, Slave_State)'
+  612 | void Slave_States (I2C_TypeDef* I2Cx  ,Slave_State state)
+      |      ^~~~~~~~~~~~
+../Stm32_F103C6_Drivers/stm32f103x8_I2C_Drver.c:544:25: note: previous implicit declaration of 'Slave_States' with type 'void(I2C_TypeDef *, Slave_State)'
+  544 |                         Slave_States(I2Cx,I2C_EV_STOP);
+      |                         ^~~~~~~~~~~~
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Stm32_F103C6_Drivers/stm32f103x8_USART_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/stm32f103x8_USART_driver.d" -MT"Stm32_F103C6_Drivers/stm32f103x8_USART_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/stm32f103x8_USART_driver.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc  -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+../Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.c: In function 'MCAL_SPI_GPIO_Set_Pins':
+../Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.c:274:25: warning: case label value is less than minimum value for type [-Wswitch-outside-range]
+  274 |                         case SPI_NSS_Hard_Master_SS_output_disable:
+      |                         ^~~~
+../Stm32_F103C6_Drivers/stm32f103x8_SPI_Drver.c:376:25: warning: case label value is less than minimum value for type [-Wswitch-outside-range]
+  376 |                         case SPI_NSS_Hard_Master_SS_output_disable:
+      |                         ^~~~
+../Stm32_F103C6_Drivers/stm32f103x8_USART_driver.c: In function 'MCAL_UART_SendData':
+../Stm32_F103C6_Drivers/stm32f103x8_USART_driver.c:180:19: warning: unused variable 'pdata' [-Wunused-variable]
+  180 |         uint16_t *pdata;
+      |                   ^~~~~
+../Src/main.c: In function 'StartOS':
+../Src/main.c:84:25: warning: implicit declaration of function 'ReadDoorSensor_runnable' [-Wimplicit-function-declaration]
+   84 |                         ReadDoorSensor_runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:89:25: warning: implicit declaration of function 'DoorLock_indication_runnable' [-Wimplicit-function-declaration]
+   89 |                         DoorLock_indication_runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc  -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc  -gdwarf-2 "../HAL/I2C_Slave_EEPROM.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"HAL/I2C_Slave_EEPROM.d" -MT"HAL/I2C_Slave_EEPROM.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/I2C_Slave_EEPROM.o"
+arm-none-eabi-gcc  -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `StartOS':
+C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:84: undefined reference to `ReadDoorSensor_runnable'
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:89: undefined reference to `DoorLock_indication_runnable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Door_Lock.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+04:36:19 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'StartOS':
+../Src/main.c:84:25: warning: implicit declaration of function 'ReadDoorSensor_Runnable' [-Wimplicit-function-declaration]
+   84 |                         ReadDoorSensor_Runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:89:25: warning: implicit declaration of function 'DoorLock_indication_runnable' [-Wimplicit-function-declaration]
+   89 |                         DoorLock_indication_runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `StartOS':
+C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:84: undefined reference to `ReadDoorSensor_Runnable'
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:89: undefined reference to `DoorLock_indication_runnable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Door_Lock.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+04:37:35 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `StartOS':
+C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:85: undefined reference to `ReadDoorSensor_Runnable'
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/dell/Desktop/Stm32/Door_Lock/Debug/../Src/main.c:90: undefined reference to `DoorLock_indication_runnable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Door_Lock.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+04:56:33 **** Incremental Build of configuration Debug for project Door_Lock ****
+make -j4 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/dell/Desktop/Stm32/Door_Lock/AUTOSAR_IMPLEMENTATION/AUTOSAR_include_files" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/HAL/includes" -I"C:/Users/dell/Desktop/Stm32/Door_Lock/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\dell\Desktop\Stm32\Door_Lock\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Cube IDE/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Door_Lock.elf has a LOAD segment with RWX permissions
+Finished building target: Door_Lock.elf
+ 
+arm-none-eabi-size  Door_Lock.elf 
+arm-none-eabi-objdump -h -S Door_Lock.elf  > "Door_Lock.list"
+   text	   data	    bss	    dec	    hex	filename
+   2728	      8	   1712	   4448	   1160	Door_Lock.elf
+Finished building: default.size.stdout
+ 
+Finished building: Door_Lock.list
+ 

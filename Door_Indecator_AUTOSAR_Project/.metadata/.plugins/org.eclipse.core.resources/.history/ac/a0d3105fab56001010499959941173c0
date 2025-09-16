@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://autosar.org/schema/r4.0 file:///F:/Autosar_in_depth/Autosar_Documention/AUTOSAR_ARXML_Schema/AUTOSAR_00046.xsd">
+	
+	<AR-PACKAGE>
+	 <SHORT-NAME>Interfaces</SHORT-NAME>
+	 <ELEMENTS>
+	 	<SENDER-RECIEVER-INTERFACE>
+	 	
+	 	
+	 	</SENDER-RECIEVER-INTERFACE>
+		<CLIENT-SERVER-INTERFACE>
+		
+		
+		
+		
+		
+		
+		</CLIENT-SERVER-INTERFACE>	 
+	 
+	 
+	 </ELEMENTS>
+	</AR-PACKAGE>
+	<AR-PACKAGE>
+		<SHORT-NAME>SWCs</SHORT-NAME>
+	</AR-PACKAGE>
+	<AR-PACKAGE>
+		<SHORT-NAME>Composition</SHORT-NAME>
+	</AR-PACKAGE>
+	
+</AUTOSAR>

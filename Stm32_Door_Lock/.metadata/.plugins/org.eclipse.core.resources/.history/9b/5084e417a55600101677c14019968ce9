@@ -1,0 +1,18 @@
+/*
+ * I2C_Slave_EEPROM.h
+ *
+ *  Created on: Aug 18, 2021
+ *      Author: kkhalil
+ */
+
+#ifndef MCAL_DIO_H_
+#define MCAL_DIO_H_
+
+#include "stm32f103x8_I2C_driver.h"
+
+
+
+
+
+
+#endif

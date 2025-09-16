@@ -1,0 +1,108 @@
+
+#if !defined(__SOFT_FP__) && defined(__ARM_FP)
+#warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+#endif
+
+
+
+
+/**
+ ******************************************************************************
+ * @file           : main.c
+ * @author         : Eng. Keroles Shenouda
+ * @brief          : Learn-in-depth.com
+ * unit 8 lesson 5 : Mastering Embedded System Online Diploma
+ ******************************************************************************
+//		Door Lock indication Project
+ ******************************************************************************
+ */
+//Learn-in-depth
+//Keroles Shenouda
+//AUTOSAR Course (learn-in-depth.com)
+
+#define MCU_Act_As_Master
+//#define MCU_Act_As_Slave
+
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+#include "STM32F103x8.h"
+#include "stm32f103x8_gpio_driver.h"
+//#include "lcd.h"
+#include "keypad.h"
+#include "stm32f103x8_EXTI_driver.h"
+#include "stm32f103x8_USART_driver.h"
+#include "stm32f103x8_SPI_driver.h"
+#include "stm32f103x8_I2C_driver.h"
+#include "I2C_Slave_EEPROM.h"
+
+
+
+
+#define CYCLES_PER_LOOP 3
+void wait_cycles( uint32_t n ) {
+	uint32_t l = n/CYCLES_PER_LOOP;
+	asm volatile( "0:" "SUBS %[count], 1;" "BNE 0b;" :[count]"+r"(l) );
+}
+
+
+void MCU_init () {
+
+	//==================GPIO INIT =============================
+
+	//Enable CLock
+	RCC_GPIOA_CLK_EN();
+
+	//PA3 ---> Door Sensor
+	GPIO_PinConfig_t PinCfg_Door_Sensor ;
+
+	PinCfg_Door_Sensor.GPIO_PinNumber = GPIO_PIN_3;
+	PinCfg_Door_Sensor.GPIO_MODE = GPIO_MODE_INPUT_FLO;
+	MCAL_GPIO_Init(GPIOA, &PinCfg_Door_Sensor);
+
+	//PA7 ---> Led On/OFF
+
+	PinCfg_Door_Sensor.GPIO_PinNumber = GPIO_PIN_7;
+	PinCfg_Door_Sensor.GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+	PinCfg_Door_Sensor.GPIO_Output_Speed = GPIO_SPEED_10M;
+	MCAL_GPIO_Init(GPIOA, &PinCfg_Door_Sensor);
+}
+void StartOS ()
+{
+	unsigned char i = 0 ;
+	//it is not memec 10ms or 12ms
+	//it is just a prodic sequence fast implementation
+	//as we will focus on implement OS and used accurate time based on the timer later on AUTOSAR OS unit
+	//But nw we focused only on APPLICATion Layer
+	while (1)
+	{
+		//memec RTE_Event_10ms
+		if (i==10)
+		{
+			//ReadDoorSensor_runnable();
+			i++ ;
+		}else if (i==12)
+		{
+			//memec RTE_Event_12ms
+			//DoorLock_indication_runnable();
+			i=0 ;
+		}else
+		{
+			i++ ;
+		}
+		wait_cycles(10);
+	}
+
+}
+
+int main(void)
+{
+	MCU_init();
+	StartOS();
+	/* Loop forever */
+	while(1)
+	{
+
+	}
+}
